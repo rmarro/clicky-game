@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "image": "./assets/images/cactus1.PNG",
+        "clicked": false
+    },
+    {
+        "id": 2,
+        "image": "./images/cactus2",
+        "clicked": false
+    },
+    {
+        "id": 3,
+        "image": "./images/cactus3",
+        "clicked": false
+    }
+]
