@@ -6,12 +6,22 @@
     },
     {
         "id": 2,
-        "image": "./images/cactus2",
+        "image": "./assets/images/cactus1.PNG",
         "clicked": false
     },
     {
         "id": 3,
-        "image": "./images/cactus3",
+        "image": "./assets/images/cactus1.PNG",
+        "clicked": false
+    },
+    {
+        "id": 4,
+        "image": "./assets/images/cactus1.PNG",
+        "clicked": false
+    },
+    {
+        "id": 5,
+        "image": "./assets/images/cactus1.PNG",
         "clicked": false
     }
 ]
