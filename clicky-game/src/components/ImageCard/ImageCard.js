@@ -2,7 +2,6 @@ import React from "react";
 import "./ImageCard.css";
 
 
-// will need to change this so state can change for clicked
 class ImageCard extends React.Component {
 
     state = {
@@ -11,9 +10,12 @@ class ImageCard extends React.Component {
 
     handleClick = () => {
         if (this.state.clicked === true) {
-            console.log("game over")
+            // call the gameover function passed through props?
+            this.props.gameOver();
         } else {
+            // call the increasescore function passed through props?
             this.setState({clicked: true})
+            this.props.increaseScore();
         }
     }
 
