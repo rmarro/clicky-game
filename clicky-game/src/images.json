@@ -23,5 +23,20 @@
         "id": 5,
         "image": "./assets/images/cactus1.PNG",
         "clicked": false
+    },
+    {
+        "id": 6,
+        "image": "./assets/images/cactus1.PNG",
+        "clicked": false
+    },
+    {
+        "id": 7,
+        "image": "./assets/images/cactus1.PNG",
+        "clicked": false
+    },
+    {
+        "id": 8,
+        "image": "./assets/images/cactus1.PNG",
+        "clicked": false
     }
 ]
