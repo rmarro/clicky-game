@@ -9,7 +9,8 @@ import images from "../../images.json";
 class GameContainer extends React.Component {
 
     state = {
-        score: 0
+        score: 0,
+        cards: images
     };
 
     increaseScore = () => {
@@ -18,11 +19,18 @@ class GameContainer extends React.Component {
         })
     };
 
+    setClicked = (i) => {
+        const cards = this.state.cards.slice();
+        cards[i].clicked = true;
+        this.setState({cards: cards});
+    };
+
     gameOver = () => {
         this.setState({
             score: 0
-        })
-    }
+        });
+        console.log("game over")
+    };
 
     render() {
         return (
@@ -31,8 +39,8 @@ class GameContainer extends React.Component {
                 <h1>Score: {this.state.score}</h1>
                 <div className="row">
                     {
-                        images.map(image => {
-                            return <ImageCard image={image.image} increaseScore={this.increaseScore} gameOver={this.gameOver}/>
+                        this.state.cards.map(card => {
+                            return <ImageCard id={card.id} clicked={card.clicked} image={card.image} increaseScore={this.increaseScore} setClicked={this.setClicked} gameOver={this.gameOver}/>
                         })
                     }
                 </div>
