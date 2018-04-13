@@ -10,21 +10,31 @@ class GameContainer extends React.Component {
 
     state = {
         score: 0,
-        cards: images
+        cards: images,
+        highscore: 0,
     };
 
     increaseScore = () => {
+        const newScore = this.state.score + 1;
         this.setState({
-            score: (this.state.score + 1)
-        })
+            score: newScore
+        });
+        // If the new score is higher than the current high score, make it the new high score
+        if (newScore > this.state.highscore) {
+            this.setState({
+                highscore: newScore
+            })
+        }
     };
 
+    // When a card is clicked, set that card's clicked state to true
     setClicked = (i) => {
         const cards = this.state.cards.slice();
         cards[i].clicked = true;
         this.setState({cards: cards});
     };
 
+    // When lose, change all clicked states to false and reset score
     gameOver = () => {
         const cards = this.state.cards.slice();
         cards.map(card => {
@@ -40,7 +50,7 @@ class GameContainer extends React.Component {
     render() {
         return (
             <div>
-                {/* <Score /> */}
+                <h1>High Score: {this.state.highscore}</h1>
                 <h1>Score: {this.state.score}</h1>
                 <div className="row">
                     {
