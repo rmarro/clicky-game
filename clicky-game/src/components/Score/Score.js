@@ -2,12 +2,16 @@ import React from "react";
 import "./Score.css";
 
 const Score = (props) => 
-<div className="score">
+<div className="scores">
     <div className="row">
-        <div className="col-md-12">
-            <h1>High Score: {props.highscore}</h1>
-            <h1>Score: {props.score}</h1>
-            <h1>{props.message}</h1>
+        <div className="col-md-4 score">
+            <div>Score: {props.score}</div>
+        </div>
+        <div className="col-md-4 message">
+            <div>{props.message}</div>
+        </div>
+        <div className="col-md-4 highscore">
+            <div>High Score: {props.highscore}</div>
         </div>
     </div>
 </div>;

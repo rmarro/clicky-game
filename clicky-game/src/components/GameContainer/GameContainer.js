@@ -4,9 +4,6 @@ import ImageCard from "../ImageCard";
 import Score from "../Score";
 import images from "../../images.json";
 
-// import Score from "./components/Score";
-
-
 class GameContainer extends React.Component {
 
     state = {
@@ -16,7 +13,7 @@ class GameContainer extends React.Component {
         message: ""
     };
 
-    // Handle an increase in score from ImageCard if unclicked card is clicked
+    // Handle an increase in score from ImageCard if an unclicked card is clicked
     increaseScore = () => {
         const newScore = this.state.score + 1;
         this.setState({
@@ -50,17 +47,15 @@ class GameContainer extends React.Component {
             return card
         });
 
-        // Set state cards to randomized version of array
+        // Set state to randomized version of cards array
         this.setState({cards: this.randomizeCards(cards)});
     };
 
+    // Get random index, split array, reverse each new array, and concatenate
     randomizeCards = (cards) => {
-        // get a random index
         const randomNum = Math.floor(Math.random()*cards.length);
-        // split the array at that number and reverse each array
         const arr1 = cards.slice(0, randomNum).reverse();
         const arr2 = cards.slice(randomNum).reverse();
-        // concatenate back together
         return arr1.concat(arr2);
     }
 
