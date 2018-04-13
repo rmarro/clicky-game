@@ -6,10 +6,10 @@ class ImageCard extends React.Component {
 
     handleClick = () => {
         if (this.props.clicked === true) {
-            // call the gameover function passed through props?
-            this.props.gameOver();
+            // call the game reset function passed through props
+            this.props.gameReset("loss");
         } else {
-            // call the increasescore function passed through props?
+            // call the setClicked and increaseScore functions passed through props
             this.props.setClicked(this.props.id);
             this.props.increaseScore();
         }
@@ -25,6 +25,7 @@ class ImageCard extends React.Component {
                             src={this.props.image}
                             onClick={this.handleClick}
                         />
+                        <div>{this.props.text}</div>
                     </div>
                 </div>
             </div>

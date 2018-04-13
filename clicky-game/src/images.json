@@ -2,41 +2,56 @@
     {
         "id": 0,
         "image": "./assets/images/cactus1.PNG",
-        "clicked": false
+        "clicked": false,
+        "text": "zero"
     },
     {
         "id": 1,
         "image": "./assets/images/cactus1.PNG",
-        "clicked": false
+        "clicked": false,
+        "text": "one"
+
     },
     {
         "id": 2,
         "image": "./assets/images/cactus1.PNG",
-        "clicked": false
+        "clicked": false,
+        "text": "two"
+
     },
     {
         "id": 3,
         "image": "./assets/images/cactus1.PNG",
-        "clicked": false
+        "clicked": false,
+        "text": "three"
+
     },
     {
         "id": 4,
         "image": "./assets/images/cactus1.PNG",
-        "clicked": false
+        "clicked": false,
+        "text": "four"
+
     },
     {
         "id": 5,
         "image": "./assets/images/cactus1.PNG",
-        "clicked": false
+        "clicked": false,
+        "text": "five"
+
     },
     {
         "id": 6,
         "image": "./assets/images/cactus1.PNG",
-        "clicked": false
+        "clicked": false,
+        "text": "six"
+
     },
     {
         "id": 7,
         "image": "./assets/images/cactus1.PNG",
-        "clicked": false
+        "clicked": false,
+        "text": "seven"
+
     }
 ]
