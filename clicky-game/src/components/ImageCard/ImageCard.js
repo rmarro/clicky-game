@@ -4,17 +4,13 @@ import "./ImageCard.css";
 
 class ImageCard extends React.Component {
 
-    state = {
-        clicked: false
-    };
-
     handleClick = () => {
-        if (this.state.clicked === true) {
+        if (this.props.clicked === true) {
             // call the gameover function passed through props?
             this.props.gameOver();
         } else {
             // call the increasescore function passed through props?
-            this.setState({clicked: true})
+            this.props.setClicked(this.props.id);
             this.props.increaseScore();
         }
     }
