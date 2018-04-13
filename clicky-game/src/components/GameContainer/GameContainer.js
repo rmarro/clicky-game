@@ -26,8 +26,13 @@ class GameContainer extends React.Component {
     };
 
     gameOver = () => {
+        const cards = this.state.cards.slice();
+        cards.map(card => {
+            return card.clicked = false
+        });
         this.setState({
-            score: 0
+            score: 0,
+            cards: cards
         });
         console.log("game over")
     };
