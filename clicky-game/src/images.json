@@ -2,56 +2,61 @@
     {
         "id": 0,
         "image": "./assets/images/cactus1.PNG",
-        "clicked": false,
-        "text": "zero"
+        "clicked": false
     },
     {
         "id": 1,
-        "image": "./assets/images/cactus1.PNG",
-        "clicked": false,
-        "text": "one"
-
+        "image": "./assets/images/cactus2.PNG",
+        "clicked": false
     },
     {
         "id": 2,
-        "image": "./assets/images/cactus1.PNG",
-        "clicked": false,
-        "text": "two"
-
+        "image": "./assets/images/cactus3.PNG",
+        "clicked": false
     },
     {
         "id": 3,
-        "image": "./assets/images/cactus1.PNG",
-        "clicked": false,
-        "text": "three"
-
+        "image": "./assets/images/cactus4.PNG",
+        "clicked": false
     },
     {
         "id": 4,
-        "image": "./assets/images/cactus1.PNG",
-        "clicked": false,
-        "text": "four"
-
+        "image": "./assets/images/cactus5.PNG",
+        "clicked": false
     },
     {
         "id": 5,
-        "image": "./assets/images/cactus1.PNG",
-        "clicked": false,
-        "text": "five"
-
+        "image": "./assets/images/cactus6.PNG",
+        "clicked": false
     },
     {
         "id": 6,
-        "image": "./assets/images/cactus1.PNG",
-        "clicked": false,
-        "text": "six"
-
+        "image": "./assets/images/cactus7.PNG",
+        "clicked": false
     },
     {
         "id": 7,
-        "image": "./assets/images/cactus1.PNG",
-        "clicked": false,
-        "text": "seven"
-
+        "image": "./assets/images/cactus8.PNG",
+        "clicked": false
+    },
+    {
+        "id": 8,
+        "image": "./assets/images/cactus9.PNG",
+        "clicked": false
+    },
+    {
+        "id": 9,
+        "image": "./assets/images/cactus10.PNG",
+        "clicked": false
+    },
+    {
+        "id": 10,
+        "image": "./assets/images/cactus11.PNG",
+        "clicked": false
+    },
+    {
+        "id": 11,
+        "image": "./assets/images/cactus12.PNG",
+        "clicked": false
     }
 ]

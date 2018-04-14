@@ -32,7 +32,7 @@ class GameContainer extends React.Component {
             })
         };
         // If the new score is 8, display win message and reset cards
-        if (newScore === 8) {
+        if (newScore === 12) {
             this.gameReset("win");
         }
     };
@@ -85,9 +85,18 @@ class GameContainer extends React.Component {
         return (
             <div className="gamecontainer">
                 <Score highscore={this.state.highscore} score={this.state.score} message={this.state.message} />
+                {/* Render the first half of the cards in one row (for formatting issues) */}
                 <div className="row">
                     {
-                        this.state.cards.map(card => {
+                        this.state.cards.slice(0, this.state.cards.length/2).map(card => {
+                            return <ImageCard id={card.id} clicked={card.clicked} text={card.text} image={card.image} increaseScore={this.increaseScore} setClicked={this.setClicked} gameReset={this.gameReset}/>
+                        })
+                    }
+                </div>
+                {/* Render the second half of the cards in another row (for formatting issues) */}
+                <div className="row">
+                    {
+                        this.state.cards.slice(this.state.cards.length/2).map(card => {
                             return <ImageCard id={card.id} clicked={card.clicked} text={card.text} image={card.image} increaseScore={this.increaseScore} setClicked={this.setClicked} gameReset={this.gameReset}/>
                         })
                     }

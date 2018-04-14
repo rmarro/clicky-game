@@ -18,14 +18,13 @@ class ImageCard extends React.Component {
     render() {
         return (
             <div>
-                <div className="col-md-3">
+                <div className="col-md-2">
                     <div className="image-card">
-                        <img
+                        <img className="img-responsive"
                             alt=""
                             src={this.props.image}
                             onClick={this.handleClick}
                         />
-                        <div>{this.props.text}</div>
                     </div>
                 </div>
             </div>
