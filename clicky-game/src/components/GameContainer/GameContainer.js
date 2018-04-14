@@ -101,6 +101,7 @@ class GameContainer extends React.Component {
                         })
                     }
                 </div>
+                <div className="github"><a target="_blank" href="https://github.com/rmarro/clicky-game">See you on Github!</a></div>
             </div>
         )
     }
